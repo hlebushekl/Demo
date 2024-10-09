@@ -1,15 +1,17 @@
-D:\Something\App\DEMO\DEMO\bin\Debug\DEMO.exe.config
-D:\Something\App\DEMO\DEMO\bin\Debug\DEMO.exe
-D:\Something\App\DEMO\DEMO\bin\Debug\DEMO.pdb
 D:\Something\App\DEMO\DEMO\obj\Debug\DEMO.csprojAssemblyReference.cache
 D:\Something\App\DEMO\DEMO\obj\Debug\Authorizations.g.cs
 D:\Something\App\DEMO\DEMO\obj\Debug\App.g.cs
-D:\Something\App\DEMO\DEMO\obj\Debug\DEMO_MarkupCompile.cache
-D:\Something\App\DEMO\DEMO\obj\Debug\DEMO_MarkupCompile.lref
 D:\Something\App\DEMO\DEMO\obj\Debug\Authorizations.baml
-D:\Something\App\DEMO\DEMO\obj\Debug\DEMO.g.resources
 D:\Something\App\DEMO\DEMO\obj\Debug\DEMO.Properties.Resources.resources
 D:\Something\App\DEMO\DEMO\obj\Debug\DEMO.csproj.GenerateResource.cache
 D:\Something\App\DEMO\DEMO\obj\Debug\DEMO.csproj.CoreCompileInputs.cache
-D:\Something\App\DEMO\DEMO\obj\Debug\DEMO.exe
-D:\Something\App\DEMO\DEMO\obj\Debug\DEMO.pdb
+D:\Something\App\DEMO\DEMO\bin\Debug\Мастер пол.exe.config
+D:\Something\App\DEMO\DEMO\bin\Debug\Мастер пол.exe
+D:\Something\App\DEMO\DEMO\bin\Debug\Мастер пол.pdb
+D:\Something\App\DEMO\DEMO\obj\Debug\Мастер пол_MarkupCompile.cache
+D:\Something\App\DEMO\DEMO\obj\Debug\Мастер пол_MarkupCompile.lref
+D:\Something\App\DEMO\DEMO\obj\Debug\Мастер пол.g.resources
+D:\Something\App\DEMO\DEMO\obj\Debug\Мастер пол.exe
+D:\Something\App\DEMO\DEMO\obj\Debug\Мастер пол.pdb
+D:\Something\App\DEMO\DEMO\obj\Debug\Registration.g.cs
+D:\Something\App\DEMO\DEMO\obj\Debug\Registration.baml

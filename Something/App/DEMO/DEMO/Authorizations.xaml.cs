@@ -1,17 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
+﻿using System.Windows;
 using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
 
 namespace DEMO
 {
@@ -23,6 +11,43 @@ namespace DEMO
         public Authorizations()
         {
             InitializeComponent();
+        }
+
+        private void Border_MouseLeftButtonUp(object sender, MouseButtonEventArgs e)
+        {
+            if (Authorization.Log(tb_Log.Text, pb_Pass.Password))
+            {
+                switch (Authorization.role(tb_Log.Text))
+                {
+                    case "Администратор":
+                        MessageBox.Show("Добро пожаловать" + Authorization.Name(tb_Log.Text));
+                        break;
+
+                    case "Менеджер":
+                        MessageBox.Show("Добро пожаловать" + Authorization.Name(tb_Log.Text));
+                        break;
+
+                    case "Кадры":
+                        MessageBox.Show("Добро пожаловать" + Authorization.Name(tb_Log.Text));
+                        break;
+
+                    case "Партнёр":
+                        MessageBox.Show("Добро пожаловать" + Authorization.Name(tb_Log.Text));
+                        break;
+
+                    default:
+                        break;
+                }
+            }
+            else
+                MessageBox.Show("Логин или пароль неверный");
+        }
+
+        private void Border_MouseLeftButtonUp_1(object sender, MouseButtonEventArgs e)
+        {
+            Registration kl = new Registration();
+            kl.Show();
+            this.Close();
         }
     }
 }
