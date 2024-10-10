@@ -17,28 +17,35 @@ namespace DEMO
         {
             if (Authorization.Log(tb_Log.Text, pb_Pass.Password))
             {
+                string name = Authorization.Name(tb_Log.Text);
                 switch (Authorization.role(tb_Log.Text))
                 {
                     case "Администратор":
-                        MessageBox.Show("Добро пожаловать" + Authorization.Name(tb_Log.Text));
+                        MessageBox.Show("Добро пожаловать " + name);
                         break;
 
                     case "Менеджер":
-                        MessageBox.Show("Добро пожаловать" + Authorization.Name(tb_Log.Text));
+                        MessageBox.Show("Добро пожаловать " + name);
                         break;
 
                     case "Кадры":
-                        MessageBox.Show("Добро пожаловать" + Authorization.Name(tb_Log.Text));
+                        MessageBox.Show("Добро пожаловать " + name);
                         break;
 
                     case "Партнёр":
-                        MessageBox.Show("Добро пожаловать" + Authorization.Name(tb_Log.Text));
+                        MessageBox.Show("Добро пожаловать " + name);
+                        break;
+
+                    case "Базовый":
+                        MessageBox.Show("Добро пожаловать " + name);
                         break;
 
                     default:
                         break;
                 }
             }
+            else if (tb_Log.Text == null || pb_Pass.Password == null)
+                MessageBox.Show("Поля пустые");
             else
                 MessageBox.Show("Логин или пароль неверный");
         }

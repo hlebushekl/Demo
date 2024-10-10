@@ -15,3 +15,5 @@ D:\Something\App\DEMO\DEMO\obj\Debug\Мастер пол.exe
 D:\Something\App\DEMO\DEMO\obj\Debug\Мастер пол.pdb
 D:\Something\App\DEMO\DEMO\obj\Debug\Registration.g.cs
 D:\Something\App\DEMO\DEMO\obj\Debug\Registration.baml
+D:\Something\App\DEMO\DEMO\obj\Debug\Мастер пол_Content.g.cs
+D:\Something\App\DEMO\DEMO\bin\Debug\3Norml.accdb

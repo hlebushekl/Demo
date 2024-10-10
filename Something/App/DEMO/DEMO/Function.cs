@@ -13,7 +13,7 @@ namespace DEMO
     {
         public static OleDbConnection connection
         {
-            get { return new OleDbConnection(""); }
+            get { return new OleDbConnection("Provider=Microsoft.ACE.OLEDB.12.0;Data Source=3Norml.accdb"); }
         }
     }
 
@@ -40,7 +40,38 @@ namespace DEMO
         {
             bool result = true;
 
+            string password = Hash.HashResult(pas);
+            string phone = Conver(number);
 
+            OleDbConnection connection = DataReader.connection;
+            OleDbDataAdapter ad;
+            DataSet set = new DataSet();
+
+            connection.Open();
+            ad = new OleDbDataAdapter("SELECT * FROM Пользователи", connection);
+            ad.Fill(set);
+
+            DataRow dr = set.Tables[0].NewRow();
+            dr["Логин"] = log;
+            dr["Пароль"] = password;
+            dr["Доступ"] = "Базовый";
+            dr["ФИО"] = FIO;
+            dr["Номер_телефона"] = phone;
+            dr["Почта"] = mail;
+
+            set.Tables[0].Rows.Add(dr);
+            OleDbCommandBuilder builder = new OleDbCommandBuilder(ad);
+            ad.Update(set);
+            connection.Close();
+
+            return result;
+        }
+        private static string Conver(string a)
+        {
+            string result = null;
+
+            result = a.Remove(0,2);
+            result = result.Replace(" ", "");
 
             return result;
         }
@@ -50,55 +81,48 @@ namespace DEMO
     {
         public static bool Log(string log, string pas)
         {
-            bool result = false;
-
             pas = Hash.HashResult(pas);
-
             OleDbConnection connection = DataReader.connection;
             OleDbDataReader reader;
             OleDbCommand command;
-            string src = $@"SELECT * FROM Авторизация WHERE Логин = '{log}' AND Пароль = '{pas}'";
+            string src = $@"SELECT * FROM Пользователи WHERE Логин = '{log}' AND Пароль = '{pas}'";
 
             connection.Open();
             command = new OleDbCommand(src, connection);
             reader = command.ExecuteReader();
-            result = reader.Read();
+            bool result = reader.Read();
             connection.Close();
 
             return result;
         }
-
         public static string Name(string log)
         {
-            string result = null;
-
             OleDbConnection connection = DataReader.connection;
             OleDbDataReader reader;
             OleDbCommand command;
-            string FinderName = $@"SELECT Имя FROM Авторизация WHERE Логин = '{log}'";
+            string FinderName = $@"SELECT ФИО FROM Пользователи WHERE Логин = '{log}'";
 
             connection.Open();
             command = new OleDbCommand(FinderName, connection);
             reader = command.ExecuteReader();
-            result = reader[0].ToString();
+            reader.Read();
+            string result = reader[0].ToString();
             connection.Close();
 
             return result;
         }
-
         public static string role(string log)
         {
-            string result = null;
-
             OleDbConnection connection = DataReader.connection;
             OleDbDataReader reader;
             OleDbCommand command;
-            string FinderName = $@"SELECT Доступ FROM Авторизация WHERE Логин = '{log}'";
+            string FinderAccess = $@"SELECT Доступ FROM Пользователи WHERE Логин = '{log}'";
 
             connection.Open();
-            command = new OleDbCommand(FinderName, connection);
+            command = new OleDbCommand(FinderAccess, connection);
             reader = command.ExecuteReader();
-            result = reader[0].ToString();
+            reader.Read();
+            string result = reader[0].ToString();
             connection.Close();
 
             return result;
@@ -109,13 +133,9 @@ namespace DEMO
     {
         public static string HashResult(string a)
         {
-            string result = null;
-
-            MD5 MD5Hash = MD5.Create();
-            byte[] passwordBytes = Encoding.ASCII.GetBytes(a);
-            byte[] hash = MD5Hash.ComputeHash(passwordBytes);
-            result = Convert.ToString(hash);
-
+            var md5 = MD5.Create();
+            var hash = md5.ComputeHash(Encoding.UTF8.GetBytes(a));
+            string result = Convert.ToBase64String(hash);
             return result;
         }
     }
