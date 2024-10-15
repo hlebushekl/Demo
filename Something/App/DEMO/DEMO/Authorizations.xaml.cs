@@ -22,17 +22,11 @@ namespace DEMO
                 {
                     case "Администратор":
                         MessageBox.Show("Добро пожаловать " + name);
+                        Admina kl = new Admina();
+                        kl.Show();
                         break;
 
                     case "Менеджер":
-                        MessageBox.Show("Добро пожаловать " + name);
-                        break;
-
-                    case "Кадры":
-                        MessageBox.Show("Добро пожаловать " + name);
-                        break;
-
-                    case "Партнёр":
                         MessageBox.Show("Добро пожаловать " + name);
                         break;
 

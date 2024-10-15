@@ -17,3 +17,24 @@ D:\Something\App\DEMO\DEMO\obj\Debug\Registration.g.cs
 D:\Something\App\DEMO\DEMO\obj\Debug\Registration.baml
 D:\Something\App\DEMO\DEMO\obj\Debug\Мастер пол_Content.g.cs
 D:\Something\App\DEMO\DEMO\bin\Debug\3Norml.accdb
+D:\Demo-main\Something\App\DEMO\DEMO\bin\Debug\3Norml.accdb
+D:\Demo-main\Something\App\DEMO\DEMO\bin\Debug\Мастер пол.exe.config
+D:\Demo-main\Something\App\DEMO\DEMO\bin\Debug\Мастер пол.exe
+D:\Demo-main\Something\App\DEMO\DEMO\bin\Debug\Мастер пол.pdb
+D:\Demo-main\Something\App\DEMO\DEMO\obj\Debug\DEMO.csprojAssemblyReference.cache
+D:\Demo-main\Something\App\DEMO\DEMO\obj\Debug\Admina.g.cs
+D:\Demo-main\Something\App\DEMO\DEMO\obj\Debug\Authorizations.g.cs
+D:\Demo-main\Something\App\DEMO\DEMO\obj\Debug\Registration.g.cs
+D:\Demo-main\Something\App\DEMO\DEMO\obj\Debug\App.g.cs
+D:\Demo-main\Something\App\DEMO\DEMO\obj\Debug\Мастер пол_Content.g.cs
+D:\Demo-main\Something\App\DEMO\DEMO\obj\Debug\Мастер пол_MarkupCompile.cache
+D:\Demo-main\Something\App\DEMO\DEMO\obj\Debug\Мастер пол_MarkupCompile.lref
+D:\Demo-main\Something\App\DEMO\DEMO\obj\Debug\Admina.baml
+D:\Demo-main\Something\App\DEMO\DEMO\obj\Debug\Authorizations.baml
+D:\Demo-main\Something\App\DEMO\DEMO\obj\Debug\Registration.baml
+D:\Demo-main\Something\App\DEMO\DEMO\obj\Debug\Мастер пол.g.resources
+D:\Demo-main\Something\App\DEMO\DEMO\obj\Debug\DEMO.Properties.Resources.resources
+D:\Demo-main\Something\App\DEMO\DEMO\obj\Debug\DEMO.csproj.GenerateResource.cache
+D:\Demo-main\Something\App\DEMO\DEMO\obj\Debug\DEMO.csproj.CoreCompileInputs.cache
+D:\Demo-main\Something\App\DEMO\DEMO\obj\Debug\Мастер пол.exe
+D:\Demo-main\Something\App\DEMO\DEMO\obj\Debug\Мастер пол.pdb
