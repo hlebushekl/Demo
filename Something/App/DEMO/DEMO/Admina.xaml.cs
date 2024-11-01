@@ -23,10 +23,17 @@ namespace DEMO
         public Admina()
         {
             InitializeComponent();
-            string clone = XamlWriter.Save(Clone);
-            Zone.Children.Clear();
-            for (int i = 0; i < DataChenger.Lenght(); i++)
-                Zone.Children.Add(DataChenger.Clone(clone, i));
+            //string clone = XamlWriter.Save(Clone);
+            //Zone.Children.Clear();
+            //for (int i = 0; i < DataChenger.Lenght(); i++)
+            //    Zone.Children.Add(DataChenger.Clone(clone, i));
+            move.MouseLeftButtonDown += new MouseButtonEventHandler(layoutRoot_MouseLeftButtonDown);
         }
+
+        void layoutRoot_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
+        {
+            this.DragMove();
+        }
+
     }
 }

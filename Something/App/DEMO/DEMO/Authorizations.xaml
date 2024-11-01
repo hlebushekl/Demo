@@ -5,8 +5,9 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:DEMO"
         mc:Ignorable="d"
-        Title="Авторизация" Height="300" Width="450" WindowStyle="None" AllowsTransparency="True" WindowStartupLocation="CenterScreen">
+        Title="Авторизация" Height="300" Width="450" WindowStyle="None" AllowsTransparency="True" WindowStartupLocation="CenterScreen" >
     <Grid Background="#FFF4E8D3">
+        <Border x:Name="move" Margin="0,0,0,239" BorderThickness="1,0" BorderBrush="#FFF4E8D3" Background="#FFF4E8D3"/>
         <TextBox x:Name="tb_Log" HorizontalAlignment="Center" Margin="0,97,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="250" TextAlignment="Left" BorderBrush="#67BA80"/>
         <PasswordBox x:Name="pb_Pass" HorizontalAlignment="Center" Margin="0,163,0,0"  VerticalAlignment="Top" Width="250" BorderBrush="#67BA80"/>
         <Label Content="Логин" HorizontalAlignment="Left" Margin="100,66,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.316,-0.114" Foreground="#67BA80"/>

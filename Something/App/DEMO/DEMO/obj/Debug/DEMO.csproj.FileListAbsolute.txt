@@ -38,3 +38,5 @@ D:\Demo-main\Something\App\DEMO\DEMO\obj\Debug\DEMO.csproj.GenerateResource.cach
 D:\Demo-main\Something\App\DEMO\DEMO\obj\Debug\DEMO.csproj.CoreCompileInputs.cache
 D:\Demo-main\Something\App\DEMO\DEMO\obj\Debug\Мастер пол.exe
 D:\Demo-main\Something\App\DEMO\DEMO\obj\Debug\Мастер пол.pdb
+D:\Something\App\DEMO\DEMO\obj\Debug\Admina.g.cs
+D:\Something\App\DEMO\DEMO\obj\Debug\Admina.baml

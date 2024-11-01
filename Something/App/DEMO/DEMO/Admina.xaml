@@ -5,36 +5,31 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:DEMO"
         mc:Ignorable="d"
-        Title="Да" WindowState="Normal" WindowStyle="None" AllowsTransparency="True" WindowStartupLocation="CenterScreen">
+        Title="ИнвестПомошник" WindowState="Normal" WindowStyle="None" AllowsTransparency="True" WindowStartupLocation="CenterScreen">
     <Grid>
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="5*" />
-            <ColumnDefinition Width="39*"/>
+            <ColumnDefinition Width="85*" />
+            <ColumnDefinition Width="299*"/>
         </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
-            <RowDefinition Height="5*"/>
-            <RowDefinition Height="39*"/>
+            <RowDefinition Height="84*"/>
+            <RowDefinition Height="451*"/>
         </Grid.RowDefinitions>
         <Border Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2">
-            <StackPanel Orientation="Horizontal" Background="#F4E8D3">
-                <Image x:Name="Иконка" Source="/Resurses/Мастер пол.png" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="15,5,10,5"/>
-                <TextBlock x:Name="Заголовок" Foreground="#67BA80" Text="Мастер пол" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="20"/>
+            <StackPanel Orientation="Horizontal" Background="#F4E8D3" Name="move">
+                <Image x:Name="Иконка" Source="/Resurses/CIO.png" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="15,5,10,5"/>
+                <TextBlock x:Name="Заголовок" Foreground="#FFF5FF21" Text="Инвест Помошник" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="20"/>
             </StackPanel>
         </Border>
         <Border Grid.Row="1" Grid.Column="1">
             <StackPanel x:Name="Zone">
-                <StackPanel x:Name="Clone" Orientation="Horizontal">
-                    <StackPanel x:Name="Tekst" Orientation="Vertical" Margin="5,5,5,5">
-                        <TextBlock Text="Тип | Наименование" FontSize="18" Margin="5,5,0,2" HorizontalAlignment="Left"/>
-                        <TextBlock Text="Директор" Margin="5,0,0,2" FontSize="13" HorizontalAlignment="Left"/>
-                        <TextBlock Text="+7 909 442 27 27" Margin="5,0,0,2" FontSize="11" HorizontalAlignment="Left"/>
-                        <TextBlock Text="Рейтинг: 10" Margin="5,0,20,5" FontSize="13" HorizontalAlignment="Left"/>
-                    </StackPanel>
-                    <StackPanel x:Name="Graph" Margin="5,5,5,5" Orientation="Vertical">
-                        <Image Source="/Resurses/Мастер пол.png" Height="100"/>
-                    </StackPanel>
+                <StackPanel x:Name="Clone" Orientation="Vertical" Margin="5,5,5,5">
+                    <TextBlock Text="Тип | Наименование" FontSize="18" Margin="5,5,0,2" HorizontalAlignment="Left"/>
+                    <TextBlock Text="Директор" Margin="5,0,0,2" FontSize="13" HorizontalAlignment="Left"/>
+                    <TextBlock Text="+7 909 442 27 27" Margin="5,0,0,2" FontSize="11" HorizontalAlignment="Left"/>
+                    <TextBlock Text="Рейтинг: 10" Margin="5,0,20,5" FontSize="13" HorizontalAlignment="Left"/>
                 </StackPanel>
             </StackPanel>
-        </Border> 
+        </Border>
     </Grid>
 </Window>

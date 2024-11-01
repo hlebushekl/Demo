@@ -24,7 +24,7 @@ namespace DEMO
     public class DataChenger
     {
         static readonly string Type = "Тип";
-        static readonly string Name = " ";
+        static readonly string Name = "";
         static readonly string Phone = "+7 909 442 27 27";
         public static DataTable Data()
         {

@@ -50,7 +50,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <ApplicationIcon>Resurses\Мастер пол.ico</ApplicationIcon>
+    <ApplicationIcon>Resurses\CIO.ico</ApplicationIcon>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -152,6 +152,8 @@
     <Content Include="3Norml.accdb">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <Resource Include="Resurses\CIO.ico" />
+    <Resource Include="Resurses\CIO.png" />
     <Resource Include="Resurses\Мастер пол.png" />
   </ItemGroup>
   <ItemGroup>

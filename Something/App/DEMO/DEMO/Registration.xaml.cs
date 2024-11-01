@@ -11,6 +11,12 @@ namespace DEMO
         public Registration()
         {
             InitializeComponent();
+            move.MouseLeftButtonDown += new MouseButtonEventHandler(layoutRoot_MouseLeftButtonDown);
+        }
+
+        void layoutRoot_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
+        {
+            this.DragMove();
         }
 
         private void Border_MouseLeftButtonUp(object sender, MouseButtonEventArgs e)

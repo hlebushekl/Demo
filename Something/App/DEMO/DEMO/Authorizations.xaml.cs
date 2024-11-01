@@ -11,6 +11,12 @@ namespace DEMO
         public Authorizations()
         {
             InitializeComponent();
+            move.MouseLeftButtonDown += new MouseButtonEventHandler(layoutRoot_MouseLeftButtonDown);
+        }
+
+        void layoutRoot_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
+        {
+            this.DragMove();
         }
 
         private void Border_MouseLeftButtonUp(object sender, MouseButtonEventArgs e)
@@ -24,6 +30,7 @@ namespace DEMO
                         MessageBox.Show("Добро пожаловать " + name);
                         Admina kl = new Admina();
                         kl.Show();
+                        this.Close();
                         break;
 
                     case "Менеджер":

@@ -7,17 +7,18 @@
         mc:Ignorable="d"
         Title="Регистрация" Height="320" Width="450" WindowStyle="None" AllowsTransparency="True" WindowStartupLocation="CenterScreen">
     <Grid Background="#FFF4E8D3">
+        <Border x:Name="move" Margin="0,0,0,290" BorderThickness="1,0" BorderBrush="#FFF4E8D3" Background="#FFF4E8D3"/>
         <TextBox x:Name="tb_Log" HorizontalAlignment="Left" Margin="25,55,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="250" TextAlignment="Left" BorderBrush="#67BA80"/>
         <TextBox x:Name="tb_Pass" HorizontalAlignment="Left" Margin="25,109,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="250" TextAlignment="Left" BorderBrush="#67BA80"/>
-        <Label Content="Логин" HorizontalAlignment="Left" Margin="25,24,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.316,-0.114" Foreground="#67BA80"/>
-        <Label Content="Пароль" HorizontalAlignment="Left" Margin="25,84,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.316,-0.114" Foreground="#67BA80"/>
+        <Label Content="Логин" HorizontalAlignment="Left" Margin="25,24,0,0" VerticalAlignment="Top" Foreground="#67BA80"/>
+        <Label Content="Пароль" HorizontalAlignment="Left" Margin="25,84,0,0" VerticalAlignment="Top" Foreground="#67BA80"/>
         <Border BorderThickness="1" Margin="311,227,10,32" Background="#67BA80" CornerRadius="15,15,15,15" MouseLeftButtonUp="Border_MouseLeftButtonUp">
             <Label x:Name="bt_Registr" Content="Регистрация" Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Center" Width="82"/>
         </Border>
         <TextBox x:Name="tb_Name" HorizontalAlignment="Left" Margin="25,160,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="250" TextAlignment="Left" Background="White" BorderBrush="#67BA80"/>
-        <Label Content="ФИО" HorizontalAlignment="Left" Margin="25,134,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.316,-0.114" Foreground="#67BA80"/>
+        <Label Content="ФИО" HorizontalAlignment="Left" Margin="25,134,0,0" VerticalAlignment="Top" Foreground="#67BA80"/>
         <TextBox x:Name="tb_Nomer" HorizontalAlignment="Left" Margin="25,210,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="250" TextAlignment="Left" Background="White" BorderBrush="#67BA80" Text="+7"/>
-        <Label  Content="Номер телефона" HorizontalAlignment="Left" Margin="25,184,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.316,-0.114" Foreground="#67BA80"/>
+        <Label  Content="Номер телефона" HorizontalAlignment="Left" Margin="25,184,0,0" VerticalAlignment="Top" Foreground="#67BA80"/>
         <TextBox x:Name="tb_Mail" HorizontalAlignment="Left" Margin="25,260,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="250" TextAlignment="Left" Background="White" BorderBrush="#67BA80"/>
         <Label  Content="EMail" HorizontalAlignment="Left" Margin="25,234,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.316,-0.114" Foreground="#67BA80"/>
 
