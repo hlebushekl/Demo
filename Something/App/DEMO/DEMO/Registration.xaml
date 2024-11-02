@@ -20,7 +20,7 @@
         <TextBox x:Name="tb_Nomer" HorizontalAlignment="Left" Margin="25,210,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="250" TextAlignment="Left" Background="White" BorderBrush="#67BA80" Text="+7"/>
         <Label  Content="Номер телефона" HorizontalAlignment="Left" Margin="25,184,0,0" VerticalAlignment="Top" Foreground="#67BA80"/>
         <TextBox x:Name="tb_Mail" HorizontalAlignment="Left" Margin="25,260,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="250" TextAlignment="Left" Background="White" BorderBrush="#67BA80"/>
-        <Label  Content="EMail" HorizontalAlignment="Left" Margin="25,234,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.316,-0.114" Foreground="#67BA80"/>
+        <Label  Content="EMail" HorizontalAlignment="Left" Margin="25,234,0,0" VerticalAlignment="Top" Foreground="#67BA80"/>
 
     </Grid>
 </Window>

@@ -18,17 +18,38 @@
         <Border Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2">
             <StackPanel Orientation="Horizontal" Background="#F4E8D3" Name="move">
                 <Image x:Name="Иконка" Source="/Resurses/CIO.png" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="15,5,10,5"/>
-                <TextBlock x:Name="Заголовок" Foreground="#FFF5FF21" Text="Инвест Помошник" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="20"/>
+                <TextBlock x:Name="Заголовок" Foreground="#67BA80" Text="Инвест Помошник" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="24"/>
             </StackPanel>
         </Border>
         <Border Grid.Row="1" Grid.Column="1">
-            <StackPanel x:Name="Zone">
-                <StackPanel x:Name="Clone" Orientation="Vertical" Margin="5,5,5,5">
-                    <TextBlock Text="Тип | Наименование" FontSize="18" Margin="5,5,0,2" HorizontalAlignment="Left"/>
-                    <TextBlock Text="Директор" Margin="5,0,0,2" FontSize="13" HorizontalAlignment="Left"/>
-                    <TextBlock Text="+7 909 442 27 27" Margin="5,0,0,2" FontSize="11" HorizontalAlignment="Left"/>
-                    <TextBlock Text="Рейтинг: 10" Margin="5,0,20,5" FontSize="13" HorizontalAlignment="Left"/>
+            <ScrollViewer CanContentScroll="True" VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Disabled">
+                <StackPanel x:Name="Zone">
+                    <StackPanel x:Name="Clone" Orientation="Vertical" Margin="5,5,5,5">
+                        <TextBlock Text="Тип | Наименование" FontSize="18" Margin="5,5,0,2" HorizontalAlignment="Left"/>
+                        <TextBlock Text="Директор" Margin="5,0,0,2" FontSize="13" HorizontalAlignment="Left"/>
+                        <TextBlock Text="+7 909 442 27 27" Margin="5,0,0,2" FontSize="11" HorizontalAlignment="Left"/>
+                        <TextBlock Text="Рейтинг: 10" Margin="5,0,20,5" FontSize="13" HorizontalAlignment="Left"/>
+                    </StackPanel>
                 </StackPanel>
+            </ScrollViewer>
+        </Border>
+        <Border Grid.Row="1" Grid.Column="0">
+            <StackPanel>
+                <Border x:Name="Kabinet" Margin="10,10" Background="#67BA80" CornerRadius="15,15,15,15">
+                    <Label Margin="20,20" Content="Личный кабинет" HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="White" FontSize="16"/>
+                </Border>
+                <Border x:Name="Kalk" Margin="10,10" Background="#67BA80" CornerRadius="15,15,15,15">
+                    <Label Margin="20,20" Content="Калькулятор" HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="White" FontSize="16"/>
+                </Border>
+                <Border x:Name="Site" Margin="10,10" Background="#67BA80" CornerRadius="15,15,15,15" MouseLeftButtonDown="Site_MouseLeftButtonDown">
+                    <Label Margin="20,20" Content="Сайт данных" HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="White" FontSize="16"/>
+                </Border>
+                <Border x:Name="Close" Margin="10,10" CornerRadius="15,15,15,15" MouseLeftButtonDown="Close_MouseLeftButtonDown">
+                    <Border.Background>
+                        <SolidColorBrush Color="{DynamicResource {x:Static SystemColors.GradientInactiveCaptionColorKey}}"/>
+                    </Border.Background>
+                    <Label Margin="20,20" Content="Закрыть приложение" HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="Black" FontSize="16"/>
+                </Border>
             </StackPanel>
         </Border>
     </Grid>

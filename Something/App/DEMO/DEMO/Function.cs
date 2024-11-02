@@ -24,14 +24,16 @@ namespace DEMO
     public class DataChenger
     {
         static readonly string Type = "Тип";
-        static readonly string Name = "";
+        static readonly string Name = "Директор";
         static readonly string Phone = "+7 909 442 27 27";
+        static readonly string Percent = "Рейтинг: 10";
         public static DataTable Data()
         {
-            string NameTable = "";
+            string NameTable = "Данные";
             OleDbConnection connection = DataReader.connection;
 
             connection.Open();
+            //Команда
             OleDbDataAdapter adapter = new OleDbDataAdapter();
             DataSet data = new DataSet();
             adapter.Fill(data);
@@ -42,8 +44,9 @@ namespace DEMO
         public static UIElement Clone(string a, int i)
         {
             string replace = a.Replace(Type, TabelInsertion(i, 2));
-            replace = replace.Replace(Name, TabelInsertion(i, 5));
+            replace = replace.Replace(Name, TabelInsertion(i, 3));
             replace = replace.Replace(Phone, TabelInsertion(i, 4));
+            replace = replace.Replace(Percent, TabelInsertion(i, 5));
 
             byte[] byteArray = Encoding.UTF8.GetBytes(replace);
             MemoryStream ms = new MemoryStream(byteArray);
@@ -132,22 +135,6 @@ namespace DEMO
 
             connection.Open();
             command = new OleDbCommand(FinderName, connection);
-            reader = command.ExecuteReader();
-            reader.Read();
-            string result = reader[0].ToString();
-            connection.Close();
-
-            return result;
-        }
-        public static string role(string log)
-        {
-            OleDbConnection connection = DataReader.connection;
-            OleDbDataReader reader;
-            OleDbCommand command;
-            string FinderAccess = $@"SELECT Доступ FROM Пользователи WHERE Логин = '{log}'";
-
-            connection.Open();
-            command = new OleDbCommand(FinderAccess, connection);
             reader = command.ExecuteReader();
             reader.Read();
             string result = reader[0].ToString();

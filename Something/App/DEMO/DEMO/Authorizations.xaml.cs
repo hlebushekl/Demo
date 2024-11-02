@@ -24,31 +24,18 @@ namespace DEMO
             if (Authorization.Log(tb_Log.Text, pb_Pass.Password))
             {
                 string name = Authorization.Name(tb_Log.Text);
-                switch (Authorization.role(tb_Log.Text))
-                {
-                    case "Администратор":
-                        MessageBox.Show("Добро пожаловать " + name);
-                        Admina kl = new Admina();
-                        kl.Show();
-                        this.Close();
-                        break;
-
-                    case "Менеджер":
-                        MessageBox.Show("Добро пожаловать " + name);
-                        break;
-
-                    case "Базовый":
-                        MessageBox.Show("Добро пожаловать " + name);
-                        break;
-
-                    default:
-                        break;
-                }
+                MessageBox.Show("Добро пожаловать " + name);
+                Admina kl = new Admina();
+                kl.Show();
+                this.Close();
             }
             else if (tb_Log.Text == null || pb_Pass.Password == null)
-                MessageBox.Show("Поля пустые");
+                MessageBox.Show("Поля пустые");           
             else
+            {
+                pb_Pass.Password = null;
                 MessageBox.Show("Логин или пароль неверный");
+            }
         }
 
         private void Border_MouseLeftButtonUp_1(object sender, MouseButtonEventArgs e)

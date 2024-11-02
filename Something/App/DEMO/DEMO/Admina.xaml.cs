@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 using System.Windows.Markup;
+using System.Diagnostics;
 
 namespace DEMO
 {
@@ -35,5 +36,14 @@ namespace DEMO
             this.DragMove();
         }
 
+        private void Site_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
+        {
+            Process.Start("https://ru.investing.com/equities?ysclid=m2zunglapr417481196");
+        }
+
+        private void Close_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
+        {
+            this.Close();
+        }
     }
 }
