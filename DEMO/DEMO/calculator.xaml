@@ -1,0 +1,28 @@
+﻿<Window x:Class="DEMO.calculator"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:DEMO"
+        mc:Ignorable="d"
+       Title="Регистрация" Height="320" Width="450" WindowStyle="None" AllowsTransparency="True" WindowStartupLocation="CenterScreen">
+    <Grid Background="#FFF4E8D3">
+        <Border x:Name="move" Margin="0,0,0,290" BorderThickness="1,0" BorderBrush="#FFF4E8D3" Background="#FFF4E8D3"/>
+        <Border x:Name="Kalk" BorderThickness="1" Margin="311,154,10,105" Background="#67BA80" CornerRadius="15,15,15,15" MouseLeftButtonUp="Kalk_MouseLeftButtonUp" >
+            <Label Content="Вычислить" Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Center" Width="82"/>
+        </Border>
+        <Border x:Name="exit" BorderThickness="1" Margin="311,229,10,33" CornerRadius="15,15,15,15" MouseLeftButtonDown="exit_MouseLeftButtonDown">
+            <Border.Background>
+                <SolidColorBrush Color="{DynamicResource {x:Static SystemColors.GradientInactiveCaptionColorKey}}"/>
+            </Border.Background>
+            <Label Content="    Закрыть" HorizontalAlignment="Center" VerticalAlignment="Center" Width="82" Foreground="Black"/>
+        </Border>
+        <Label Content="Цена" HorizontalAlignment="Left" Margin="26,69,0,0" VerticalAlignment="Top" Foreground="#67BA80"/>
+        <TextBox x:Name="tb_price" HorizontalAlignment="Left" Margin="25,100,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="250" TextAlignment="Left" Background="White" BorderBrush="#67BA80"/>
+        <Label  Content="Процент" HorizontalAlignment="Left" Margin="26,129,0,0" VerticalAlignment="Top" Foreground="#67BA80"/>
+        <TextBox x:Name="tb_percent" HorizontalAlignment="Left" Margin="26,160,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="250" TextAlignment="Left" Background="White" BorderBrush="#67BA80"/>
+        <Label  Content="Количество" HorizontalAlignment="Left" Margin="26,189,0,0" VerticalAlignment="Top" Foreground="#67BA80"/>
+        <TextBox x:Name="tb_number_of" HorizontalAlignment="Left" Margin="26,220,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="250" TextAlignment="Left" Background="White" BorderBrush="#67BA80"/>
+        <TextBox x:Name="tb_summ" Height="36" Margin="311,82,10,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="129"/>
+    </Grid>
+</Window>
